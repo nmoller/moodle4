@@ -1,0 +1,3 @@
+https://github.com/moodle/moodle.git /opt/installer/moodle master
+https://github.com/catalyst/moodle-auth_saml2.git /opt/installer/moodle/auth/saml2 MOODLE_39_STABLE
+# must be present

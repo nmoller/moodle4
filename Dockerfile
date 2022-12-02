@@ -8,5 +8,7 @@ RUN ./builder.sh
 
 FROM moodlehq/moodle-php-apache:7.4
 COPY --from=0 /opt/installer/moodle /var/www/html
+RUN apt update && apt install -y sudo &&\
+  mkdir -p /var/www/local && chown www-data:www-data /var/www/local
 
 
